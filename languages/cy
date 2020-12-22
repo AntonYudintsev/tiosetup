@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf cy
-git clone https://github.com/cyoce/Cy.git cy
-
-exit "$err"

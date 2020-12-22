@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf apl-ngn
-git clone https://gitlab.com/n9n/apl.git apl-ngn
-
-exit "$err"

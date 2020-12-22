@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf triple-threat
-git clone https://github.com/TryItOnline/Triple-Threat triple-threat
-
-exit "$err"

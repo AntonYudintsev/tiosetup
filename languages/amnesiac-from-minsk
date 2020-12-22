@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf amnesiac-from-minsk
-git clone https://github.com/pavelbraginskiy/TheAmnesiacFromMinsk.git amnesiac-from-minsk
-
-exit "$err"

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf paradoc
-git clone https://github.com/betaveros/paradoc.git
-
-exit "$err"

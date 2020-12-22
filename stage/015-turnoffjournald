@@ -5,8 +5,8 @@ trap 'err=1' ERR
 
 source private/config
 if [[ "$OfflineMode" != "y" ]]; then
-  systemctl mask systemd-journald{,{,-audit,-dev-log}.socket}
-  systemctl stop systemd-journald{,{,-audit,-dev-log}.socket}
+  systemctl unmask systemd-journald{,{,-audit,-dev-log}.socket}
+  systemctl restart systemd-journald{,{,-audit,-dev-log}.socket}
 fi
 
 exit "$err"

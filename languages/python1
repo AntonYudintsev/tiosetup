@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf python1
-curl --silent --show-error --location https://github.com/TryItOnline/tiosetup-binaries/releases/download/python161/python1.tar.gz | tar x -z
-
-exit "$err"

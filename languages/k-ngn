@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf k-ngn
-git clone https://bitbucket.org/ngn/k.git k-ngn
-
-exit "$err"

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf fractran
-git clone https://github.com/DennisMitchell/ffi.git fractran
-
-exit "$err"

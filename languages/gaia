@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf gaia
-git clone https://github.com/splcurran/Gaia.git gaia
-
-exit "$err"

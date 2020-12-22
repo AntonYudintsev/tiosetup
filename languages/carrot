@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf carrot
-git clone https://github.com/kritixilithos/Carrot.git carrot
-
-exit "$err"

@@ -4,7 +4,12 @@ err=0
 trap 'err=1' ERR
 
 rm -rf /srv
-git clone https://github.com/TryItOnline/tryitonline.git /srv
+git clone https://github.com/AntonYudintsev/tryitonline.git /srv
+#git -C /srv fetch origin pull/73/head:AntonYudintsev
+#git -C /srv checkout AntonYudintsev
+
+exit "$err"
+
 source private/config
 
 if [[ ! -z $TryItOnlineCommit ]]; then

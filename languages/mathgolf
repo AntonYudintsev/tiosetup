@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf mathgolf
-git clone https://github.com/maxbergmark/mathgolf.git
-
-exit "$err"

@@ -1,8 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-pip3 install --upgrade https://github.com/DennisMitchell/jellylanguage/archive/master.tar.gz
-
-exit "$err"

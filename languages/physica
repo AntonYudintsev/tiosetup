@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf physica
-git clone https://github.com/Mr-Xcoder/Physica.git physica
-
-exit "$err"

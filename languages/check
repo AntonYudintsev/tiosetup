@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf check
-git clone https://github.com/ScratchMan544/check-lang.git check
-
-exit "$err"

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf addpp
-git clone https://github.com/cairdcoinheringaahing/AddPlusPlus.git addpp
-
-exit "$err"

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf reng
-git clone https://github.com/ConorOBrien-Foxx/Reng.git reng
-
-exit "$err"
