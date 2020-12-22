@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf minkolang
-git clone https://github.com/elendiastarman/Minkolang.git minkolang
-
-exit "$err"

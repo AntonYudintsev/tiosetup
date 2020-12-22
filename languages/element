@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf element
-git clone https://github.com/PhiNotPi/Element.git element
-
-exit "$err"

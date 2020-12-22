@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf apl-dyalog-extended
-git clone https://github.com/abrudz/dyalog-apl-extended.git apl-dyalog-extended
-
-exit "$err"

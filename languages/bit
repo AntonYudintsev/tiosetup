@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf bit
-git clone https://github.com/FireCubez/bit.git
-
-exit "$err"

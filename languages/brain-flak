@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf brain-flak
-git clone https://github.com/DJMcMayhem/Brain-Flak.git brain-flak
-
-exit "$err"

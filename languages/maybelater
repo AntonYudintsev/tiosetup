@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf maybelater
-git clone https://github.com/TehFlaminTaco/MaybeLater.git maybelater
-
-exit "$err"

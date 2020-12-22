@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf mornington-crescent
-git clone https://github.com/padarom/esoterpret.git mornington-crescent
-
-exit "$err"

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf esopunk
-git clone https://gitlab.com/Blacksilver/pyesopunk.git esopunk
-
-exit "$err"

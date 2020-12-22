@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf aceto
-git clone --recursive https://github.com/aceto/aceto.git
-
-exit "$err"

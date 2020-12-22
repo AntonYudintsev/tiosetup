@@ -1,0 +1,10 @@
+#!/bin/bash
+
+err=0
+trap "err=1" ERR
+
+chmod +x /srv/wrappers/dascript
+
+/usr/bin/certbot --apache -n -d tio.gaijin.team -d tiorun.gaijin.team
+
+exit "$err"

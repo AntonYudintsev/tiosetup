@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf beatnik
-git clone https://github.com/catseye/Beatnik.git beatnik
-
-exit "$err"

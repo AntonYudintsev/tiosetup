@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf quadr
-git clone https://github.com/abrudz/quadrs.git quadr
-
-exit "$err"

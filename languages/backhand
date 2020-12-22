@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf backhand
-git clone https://github.com/GuyJoKing/Backhand.git backhand
-
-exit "$err"

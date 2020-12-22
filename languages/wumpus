@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf wumpus
-git clone https://github.com/m-ender/wumpus.git
-
-exit "$err"

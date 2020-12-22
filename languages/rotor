@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf rotor
-git clone https://github.com/quartata/rotor-lang.git rotor
-
-exit "$err"

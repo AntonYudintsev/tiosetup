@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf clam
-git clone https://github.com/dylanrenwick/Clam.git clam
-
-exit "$err"

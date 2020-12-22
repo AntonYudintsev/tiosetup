@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf cascade
-git clone https://github.com/GuyJoKing/Cascade.git cascade
-
-exit "$err"

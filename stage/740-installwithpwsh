@@ -1,8 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-HOME=/opt/microsoft/home pwsh -Command Update-Help
-
-exit "$err"

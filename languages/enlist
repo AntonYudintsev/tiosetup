@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf enlist
-git clone https://github.com/alexander-liao/enlist.git
-
-exit "$err"

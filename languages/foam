@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf foam
-git clone https://github.com/Reconcyl/foam-lang.git foam
-
-exit "$err"

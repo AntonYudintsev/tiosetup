@@ -1,0 +1,43 @@
+#!/bin/sh
+
+err=0
+trap 'err=1' ERR
+
+if [ -e daScript.src ]; then
+  rm -rf daScript.src
+fi
+
+git clone https://github.com/GaijinEntertainment/daScript.git daScript.src
+
+chmod -R +r daScript.src/
+
+cd daScript.src
+
+./generate_gcc_release.sh
+
+cd cmake_temp
+
+make
+
+cd ../
+
+install -d ../daScript
+
+if [ ! -e ../daScript/daScript ]; then
+  ln -s bin/daScript ../daScript/daScript
+fi
+
+sendmail m.markov@gaijin.team << EOF &
+Content-Type: text/plain
+From: "daScript build summary"<noreply@gaijin.team>
+To: m.markov@gaijin.team
+Subject: daScript build complete
+
+`cat /var/log/tioupd/daScript.log`
+.
+EOF
+
+
+exit "$err"
+
+

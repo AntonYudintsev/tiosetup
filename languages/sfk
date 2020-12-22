@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-wget http://stahlworks.com/sfkux64 -O /usr/local/bin/sfk
-chmod +x /usr/local/bin/sfk
-
-exit "$err"

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-err=0
-trap 'err=1' ERR
-
-rm -rf memory-gap
-git clone https://github.com/ConorOBrien-Foxx/memory-GAP.git memory-gap
-
-exit "$err"
